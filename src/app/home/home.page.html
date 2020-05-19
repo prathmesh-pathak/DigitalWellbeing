@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Digital Wellbeing
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <div class="ion-padding chart-container">
+      <canvas #doughnutCanvas></canvas>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Usage in minutes</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>YouTube: 56</ion-item>
+          <ion-item>FaceBook: 46</ion-item>
+          <ion-item>Instagram: 24</ion-item>
+          <ion-item>WhatsAPP: 58</ion-item>
+          <ion-item>Netflix: 40</ion-item>
+          <ion-item>Others: 62</ion-item>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-item>
+  <ion-item>
+    <div slot="start">
+      <ion-label>Unlocks</ion-label>
+      <ion-label>29</ion-label>
+    </div>
+    <div slot="end">
+      <ion-label>Notifications</ion-label>
+      <ion-label>145</ion-label>
+    </div>
+  </ion-item>
+  <ion-item>
+    <div class="ion-padding chart-container">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>About the Device</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>Android Model : {{ model }}</ion-item>
+          <ion-item>Manufacturer : {{ manufacture }}</ion-item>
+          <ion-item>Operating System : {{ platform }}</ion-item>
+          <ion-item>Device ID : {{ uuid }}</ion-item>
+          <ion-item>Android Version : {{ version }}</ion-item>
+          <ion-item>Cordova Version : {{ cordova }}</ion-item>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-item>
+</ion-content>
